@@ -4,7 +4,6 @@
 
 #include "Card.h"
 #include <cstdlib>
-#include <vector>
 
 //Card::Card()
 //{
@@ -14,13 +13,11 @@
 Card::Card(unsigned int cardSize, unsigned int maxBingoNumber)
 {
     m_cardSize = cardSize;
-    std::vector<unsigned int> usedNums;
-
-    m_cardGrid = new unsigned int*[m_cardSize];
+    std::vector<unsigned int> usedNums = {};
 
     for (unsigned int i = 0; i < m_cardSize; i++)
     {
-        m_cardGrid[i] = new unsigned int[m_cardSize];
+        m_cardGrid.push_back({});
 
         for (unsigned int j = 0; j < m_cardSize; j++)
         {
@@ -43,7 +40,8 @@ Card::Card(unsigned int cardSize, unsigned int maxBingoNumber)
 
                 if (!alreadyInCard)
                 {
-                    m_cardGrid[i][j] = number;
+                    m_cardGrid[i].push_back(number);
+                    usedNums.push_back(number);
                 }
             }
         }
@@ -62,18 +60,5 @@ unsigned int Card::getCardSize() const
 
 Card::~Card()
 {
-    for (unsigned int i = 0; i < m_cardSize; i++)
-    {
-        if (m_cardGrid[i])
-        {
-            delete[] m_cardGrid[i];
-            m_cardGrid[i] = nullptr;
-        }
-    }
-
-    if (m_cardGrid)
-    {
-        delete[] m_cardGrid;
-        m_cardGrid = nullptr;
-    }
+    //The Card class deals with no dynamically allocated memory, aside from vectors, which handle their own destruction.
 }

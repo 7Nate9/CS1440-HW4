@@ -5,12 +5,13 @@
 #ifndef HW4_BINGO_CARD_H
 #define HW4_BINGO_CARD_H
 
+#include <vector>
 
 class Card {
 private:
     unsigned int m_cardSize;
 public:
-    unsigned int** m_cardGrid;
+     std::vector<std::vector<unsigned int>>m_cardGrid;
 
     //Card();
     Card(unsigned int cardSize, unsigned int maxBingoNumber);

@@ -24,12 +24,12 @@ Deck::Deck(int cardSize, int cardCount, int numberMax)
 
 Deck::~Deck()
 {
-    //The Deck class does not use any dynamically allocated memory, with the exception of that used by the Card class, which is handled by the Card destructor.
+    //The Deck class does not use any dynamically allocated memory, with the exception vectors, which handle their own destruction.
 }
 
 void Deck::print(std::ostream& out) const
 {
-    for (unsigned int i = 0; i < m_deckSize; i++)
+    for (unsigned int i = 1; i <= m_deckSize; i++)
     {
         print(out, i);
         out << std::endl;
@@ -38,9 +38,11 @@ void Deck::print(std::ostream& out) const
 
 void Deck::print(std::ostream& out, int cardIndex) const
 {
+    cardIndex--;
+
     unsigned int maxNumberLength = static_cast<unsigned int>(log10(static_cast<double>(m_maxNumber)) + 1);
 
-    out << "Card #" << cardIndex << std::endl;
+    out << "Card #" << cardIndex + 1 << std::endl;
 
     out << "+";
 

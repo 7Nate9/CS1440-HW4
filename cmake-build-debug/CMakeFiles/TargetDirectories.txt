@@ -1,3 +1,0 @@
-C:/Users/Nate/CLionProjects/HW4 - Bingo/cmake-build-debug/CMakeFiles/HW4___Bingo.dir
-C:/Users/Nate/CLionProjects/HW4 - Bingo/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Nate/CLionProjects/HW4 - Bingo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
