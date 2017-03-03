@@ -1,0 +1,132 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Card.cpp
+Card.h
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Card.h
+cstdlib
+-
+
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Card.h
+vector
+-
+
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Deck.cpp
+Deck.h
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Deck.h
+cmath
+-
+iomanip
+-
+
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Deck.h
+ostream
+-
+vector
+-
+Card.h
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Card.h
+
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Menu.cpp
+Menu.h
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Menu.h
+locale
+-
+string.h
+-
+iostream
+-
+iomanip
+-
+
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Menu.h
+MenuOption.h
+C:/Users/Nate/CLionProjects/HW4 - Bingo/MenuOption.h
+
+C:/Users/Nate/CLionProjects/HW4 - Bingo/MenuOption.cpp
+MenuOption.h
+C:/Users/Nate/CLionProjects/HW4 - Bingo/MenuOption.h
+
+C:/Users/Nate/CLionProjects/HW4 - Bingo/MenuOption.h
+string
+-
+
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Testing/CardTester.cpp
+CardTester.h
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Testing/CardTester.h
+iostream
+-
+
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Testing/CardTester.h
+../Card.h
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Card.h
+
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Testing/DeckTester.cpp
+iostream
+-
+DeckTester.h
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Testing/DeckTester.h
+
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Testing/DeckTester.h
+../Deck.h
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Deck.h
+
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Testing/MenuOptionTester.cpp
+MenuOptionTester.h
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Testing/MenuOptionTester.h
+../MenuOption.h
+C:/Users/Nate/CLionProjects/HW4 - Bingo/MenuOption.h
+iostream
+-
+
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Testing/MenuOptionTester.h
+
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Testing/MenuTester.cpp
+MenuTester.h
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Testing/MenuTester.h
+../MenuOption.h
+C:/Users/Nate/CLionProjects/HW4 - Bingo/MenuOption.h
+../Menu.h
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Menu.h
+iostream
+-
+
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Testing/MenuTester.h
+
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Testing/testMain.cpp
+iostream
+-
+ctime
+-
+MenuOptionTester.h
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Testing/MenuOptionTester.h
+MenuTester.h
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Testing/MenuTester.h
+DeckTester.h
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Testing/DeckTester.h
+CardTester.h
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Testing/CardTester.h
+
+C:/Users/Nate/CLionProjects/HW4 - Bingo/UserInterface.cpp
+UserInterface.h
+C:/Users/Nate/CLionProjects/HW4 - Bingo/UserInterface.h
+iostream
+-
+iomanip
+-
+fstream
+-
+Deck.h
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Deck.h
+Menu.h
+C:/Users/Nate/CLionProjects/HW4 - Bingo/Menu.h
+
+C:/Users/Nate/CLionProjects/HW4 - Bingo/UserInterface.h
+string
+-
+

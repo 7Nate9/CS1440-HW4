@@ -86,5 +86,17 @@ void Deck::print(std::ostream& out, int cardIndex) const
     }
 }
 
+unsigned int Deck::getDeckSize()
+{
+    return m_deckSize;
+}
 
+unsigned int Deck::getMaxNumber()
+{
+    return m_maxNumber;
+}
 
+std::vector<Card>& Deck::getCardDeck()
+{
+    return m_cardDeck;
+}

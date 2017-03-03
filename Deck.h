@@ -22,6 +22,10 @@ public:
 
     void print(std::ostream& out) const;
     void print(std::ostream& out, int cardIndex) const;
+
+    unsigned int getDeckSize();
+    unsigned int getMaxNumber();
+    std::vector<Card>& getCardDeck();
 };
 
 #endif //BINGO_DECK_H
