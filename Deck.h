@@ -13,19 +13,19 @@
 
 class Deck {
 private:
-    unsigned int m_deckSize;
-    unsigned int m_maxNumber;
+    const unsigned int m_deckSize;
+    const unsigned int m_maxNumber;
     std::vector<Card> m_cardDeck;
 public:
     Deck(int cardSize, int cardCount, int numberMax);
     ~Deck();
 
-    void print(std::ostream& out) const;
-    void print(std::ostream& out, int cardIndex) const;
+    const void print(std::ostream& out);
+    const void print(std::ostream& out, int cardIndex);
 
-    unsigned int getDeckSize();
-    unsigned int getMaxNumber();
-    std::vector<Card>& getCardDeck();
+    const unsigned int getDeckSize();
+    const unsigned int getMaxNumber();
+    const std::vector<Card>& getCardDeck();
 };
 
 #endif //BINGO_DECK_H

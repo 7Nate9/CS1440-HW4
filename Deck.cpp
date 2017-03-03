@@ -6,15 +6,14 @@
 #include <cmath>
 #include <iomanip>
 
-Deck::Deck(int cardSize, int cardCount, int numberMax)
+Deck::Deck(int cardSize, int cardCount, int numberMax):
+m_deckSize(static_cast<unsigned int>(cardCount)),
+m_maxNumber(static_cast<unsigned int>(numberMax))
 {
     if (cardSize < 3 || cardSize > 15 || cardCount < 3 || cardCount > 10000 || numberMax < (2 * cardSize * cardSize) || numberMax > (4 * cardSize * cardSize))
     {
         exit(-1);
     }
-
-    m_maxNumber = static_cast<unsigned int>(numberMax);
-    m_deckSize = static_cast<unsigned int>(cardCount);
 
     for (unsigned int i = 0; i < m_deckSize; i++)
     {
@@ -27,7 +26,7 @@ Deck::~Deck()
     //The Deck class does not use any dynamically allocated memory, with the exception vectors, which handle their own destruction.
 }
 
-void Deck::print(std::ostream& out) const
+const void Deck::print(std::ostream& out)
 {
     for (unsigned int i = 1; i <= m_deckSize; i++)
     {
@@ -36,7 +35,7 @@ void Deck::print(std::ostream& out) const
     }
 }
 
-void Deck::print(std::ostream& out, int cardIndex) const
+const void Deck::print(std::ostream& out, int cardIndex)
 {
     cardIndex--;
 
@@ -86,17 +85,17 @@ void Deck::print(std::ostream& out, int cardIndex) const
     }
 }
 
-unsigned int Deck::getDeckSize()
+const unsigned int Deck::getDeckSize()
 {
     return m_deckSize;
 }
 
-unsigned int Deck::getMaxNumber()
+const unsigned int Deck::getMaxNumber()
 {
     return m_maxNumber;
 }
 
-std::vector<Card>& Deck::getCardDeck()
+const std::vector<Card>& Deck::getCardDeck()
 {
     return m_cardDeck;
 }

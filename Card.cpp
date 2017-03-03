@@ -10,9 +10,9 @@
 //
 //}
 
-Card::Card(unsigned int cardSize, unsigned int maxBingoNumber)
+Card::Card(unsigned int cardSize, unsigned int maxBingoNumber):
+m_cardSize(cardSize)
 {
-    m_cardSize = cardSize;
     std::vector<unsigned int> usedNums = {};
 
     for (unsigned int i = 0; i < m_cardSize; i++)
@@ -48,12 +48,12 @@ Card::Card(unsigned int cardSize, unsigned int maxBingoNumber)
     }
 }
 
-unsigned int Card::getElement(unsigned int xIndex, unsigned int yIndex) const
+const unsigned int Card::getElement(unsigned int xIndex, unsigned int yIndex)
 {
     return m_cardGrid[xIndex][yIndex];
 }
 
-unsigned int Card::getCardSize() const
+const unsigned int Card::getCardSize()
 {
     return m_cardSize;
 }
